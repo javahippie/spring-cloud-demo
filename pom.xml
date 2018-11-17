@@ -13,6 +13,9 @@
 
     <modules>
         <module>eureka</module>
+        <module>authservice</module>
+        <module>configservice</module>
+        <module>gateway</module>
     </modules>
 
     <parent>
