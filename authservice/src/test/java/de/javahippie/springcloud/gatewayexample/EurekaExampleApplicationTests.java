@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.eurekaexample;
+package de.javahippie.springcloud.gatewayexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

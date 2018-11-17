@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.eurekaexample;
+package de.javahippie.springcloud.gatewayexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
