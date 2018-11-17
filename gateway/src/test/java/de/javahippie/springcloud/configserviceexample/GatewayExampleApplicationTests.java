@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.gatewayexample;
+package de.javahippie.springcloud.configserviceexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.gatewayexample;
+package de.javahippie.springcloud.configserviceexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

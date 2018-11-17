@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.gatewayexample;
+package de.javahippie.springcloud.configserviceexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EurekaExampleApplicationTests {
+public class ConfigServiceExampleApplicationTests {
 
 	@Test
 	public void contextLoads() {
