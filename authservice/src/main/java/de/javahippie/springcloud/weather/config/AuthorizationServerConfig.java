@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.authserviceexample.config;
+package de.javahippie.springcloud.weather.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;

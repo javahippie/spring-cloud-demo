@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: weather-app
+
+server:
+  port: 80
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    enabled: false

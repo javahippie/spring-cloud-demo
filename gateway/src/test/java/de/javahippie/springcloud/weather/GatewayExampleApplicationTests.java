@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.authserviceexample;
+package de.javahippie.springcloud.weather;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

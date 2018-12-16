@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.authserviceexample;
+package de.javahippie.springcloud.weather;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AuthServiceExampleApplicationTests {
+public class EurekaExampleApplicationTests {
 
 	@Test
 	public void contextLoads() {
