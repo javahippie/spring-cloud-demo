@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.weather.integration;
+package de.javahippie.springcloud.weather.domains.integration;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;

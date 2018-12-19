@@ -14,9 +14,9 @@
     <modules>
         <module>eureka</module>
         <module>authservice</module>
-        <module>configservice</module>
         <module>gateway</module>
         <module>weather-app</module>
+        <module>car-app</module>
     </modules>
 
     <parent>

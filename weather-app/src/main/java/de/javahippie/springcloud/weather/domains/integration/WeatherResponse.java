@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.weather.integration;
+package de.javahippie.springcloud.weather.domains.integration;
 
 import java.io.Serializable;
 

@@ -1,8 +1,8 @@
-package de.javahippie.springcloud.weather.cityweather;
+package de.javahippie.springcloud.weather.domains.car;
 
 import java.io.Serializable;
 
-public class CityWeather implements Serializable {
+public class Car implements Serializable {
     private String weather;
 
     public String getWeather() {
