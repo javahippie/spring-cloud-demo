@@ -17,6 +17,7 @@
         <module>gateway</module>
         <module>weather-app</module>
         <module>car-app</module>
+        <module>frontend-app</module>
     </modules>
 
     <parent>
