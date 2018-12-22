@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface WeatherClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/weather", consumes = "application/json")
-    WeatherResponse getWeatherForCity(@RequestParam(name = "q") String city, @RequestParam(name="APPID") String apiKey);
+    WeatherResponse getWeatherForCity(@RequestParam(name = "q") String city, @RequestParam(name="APPID") String apiKey, @RequestParam(name="units") String metric);
 
 }

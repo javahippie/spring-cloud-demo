@@ -1,7 +1,9 @@
-package de.javahippie.springcloud.weather.domains.car;
+package de.javahippie.springcloud.weather.domains.weather;
 
 import de.javahippie.springcloud.weather.domains.integration.WeatherClient;
 import de.javahippie.springcloud.weather.domains.integration.WeatherResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "/api/weather")
 public class WeatherController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(WeatherController.class);
 
     private WeatherClient weatherClient;
 
@@ -29,7 +33,9 @@ public class WeatherController {
 
     @GetMapping
     public ResponseEntity<CityWeather> getWeatherForCity(@RequestParam(name = "city") String city) {
-        WeatherResponse response = weatherClient.getWeatherForCity(city, apiKey);
+        LOG.info("Received weather request for city " + city );
+        WeatherResponse response = weatherClient.getWeatherForCity(city, apiKey, "metric");
+        LOG.info("Sending response " + response);
         return ResponseEntity.ok(mapper.fromIntegration(response));
     }
 }
