@@ -1,6 +1,6 @@
 package de.javahippie.springcloud.weather.domains.weather;
 
-import de.javahippie.springcloud.car.domains.integration.WeatherResponse;
+import de.javahippie.springcloud.weather.domains.integration.WeatherResponse;
 import org.springframework.stereotype.Component;
 
 @Component

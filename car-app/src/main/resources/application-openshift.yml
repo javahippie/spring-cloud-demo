@@ -1,7 +1,18 @@
 server:
   port: 8080
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://${MYSQL_HOST}:${MYSQL_PORT}/cars
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
+  instance:
+    preferIpAddress: true

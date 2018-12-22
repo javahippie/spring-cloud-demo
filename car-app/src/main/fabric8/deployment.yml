@@ -17,10 +17,25 @@ spec:
             configMapKeyRef:
               name: eureka-config
               key: eureka.host
-        - name: API_KEY
+        - name: MYSQL_HOST
           valueFrom:
             configMapKeyRef:
-              name: rest-config
-              key: openweather.apikey
+              name: car-config
+              key: host
+        - name: MYSQL_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: car-config
+              key: port
+        - name: MYSQL_USER
+          valueFrom:
+            configMapKeyRef:
+              name: car-config
+              key: username
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: car-config
+              key: password
         - name: JAVA_OPTIONS
           value: "-Dspring.profiles.active=openshift"

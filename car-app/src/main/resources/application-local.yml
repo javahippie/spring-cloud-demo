@@ -1,6 +1,15 @@
 server:
   port: 8083
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cars
+    username: caruser
+    password: carpassword
+
 eureka:
   client:
     enabled: false

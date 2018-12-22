@@ -8,6 +8,9 @@ eureka:
 
 zuul:
   routes:
-    student-service:
+    weather-service:
       path: /weather/**
       serviceId: weather-app
+    car-service:
+      path: /car/**
+      serviceId: car-app

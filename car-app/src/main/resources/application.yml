@@ -1,6 +1,13 @@
 spring:
   application:
-    name: weather-app
+    name: car-app
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: tbd
+    username: tbd
+    password: tbd
 
 server:
   port: 8080

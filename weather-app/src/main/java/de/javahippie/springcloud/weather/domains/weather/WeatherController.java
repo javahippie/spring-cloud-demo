@@ -1,7 +1,7 @@
 package de.javahippie.springcloud.weather.domains.weather;
 
-import de.javahippie.springcloud.car.domains.integration.WeatherClient;
-import de.javahippie.springcloud.car.domains.integration.WeatherResponse;
+import de.javahippie.springcloud.weather.domains.integration.WeatherClient;
+import de.javahippie.springcloud.weather.domains.integration.WeatherResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
