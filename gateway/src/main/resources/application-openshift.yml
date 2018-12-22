@@ -6,4 +6,8 @@ eureka:
     serviceUrl:
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka/
 
-
+zuul:
+  routes:
+    student-service:
+      path: /weather/**
+      serviceId: weather-app
