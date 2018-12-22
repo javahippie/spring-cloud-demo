@@ -1,7 +1,7 @@
-package de.javahippie.springcloud.weather.domains.car;
+package de.javahippie.springcloud.car.domains.car;
 
-import de.javahippie.springcloud.weather.domains.integration.WeatherClient;
-import de.javahippie.springcloud.weather.domains.integration.WeatherResponse;
+import de.javahippie.springcloud.car.domains.integration.WeatherClient;
+import de.javahippie.springcloud.car.domains.integration.WeatherResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;

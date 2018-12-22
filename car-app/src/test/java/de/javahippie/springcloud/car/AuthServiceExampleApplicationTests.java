@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.weather;
+package de.javahippie.springcloud.car;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

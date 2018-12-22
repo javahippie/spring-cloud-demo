@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.weather.config;
+package de.javahippie.springcloud.car.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

@@ -1,4 +1,4 @@
-package de.javahippie.springcloud.weather.domains.car;
+package de.javahippie.springcloud.car.domains.car;
 
 import java.io.Serializable;
 

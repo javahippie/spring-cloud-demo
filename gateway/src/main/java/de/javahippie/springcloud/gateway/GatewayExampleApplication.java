@@ -1,16 +1,16 @@
-package de.javahippie.springcloud.weather;
+package de.javahippie.springcloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients
-public class CarApp {
+@EnableZuulProxy
+public class GatewayExampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CarApp.class, args);
+        SpringApplication.run(GatewayExampleApplication.class, args);
     }
 }
