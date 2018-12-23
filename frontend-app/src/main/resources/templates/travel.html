@@ -5,6 +5,30 @@
     <title>Travel</title>
 </head>
 <body>
-
+<table>
+    <thead>
+    <tr>
+        <th>License Plate</th>
+        <th>Maker</th>
+        <th>Model</th>
+        <th>Registration</th>
+        <th>km</th>
+        <th>Winter Tires</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${cars.isEmpty()}">
+        <td colspan="2"> No Cars Available</td>
+    </tr>
+    <tr th:each="car : ${cars}">
+        <td><span th:text="${car.getLicensePlate()}"> License Plate </span></td>
+        <td><span th:text="${car.getManufacturer()}"> Manufacturer </span></td>
+        <td><span th:text="${car.getModel()}"> Model </span></td>
+        <td><span th:text="${car.getRegistrationDate()}"> RegistrationDate </span></td>
+        <td><span th:text="${car.getOdometer()}"> Odometer </span></td>
+        <td><span th:text="${car.getWinterTiresEquipped()}"> Winter Tires </span></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

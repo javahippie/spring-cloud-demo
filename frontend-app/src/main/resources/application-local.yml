@@ -4,3 +4,8 @@ server:
 eureka:
   client:
     enabled: false
+
+spring:
+  resources:
+    cache:
+      period: 0s
