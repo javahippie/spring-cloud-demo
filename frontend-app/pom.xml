@@ -66,6 +66,29 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.github.warmuuh</groupId>
+                    <artifactId>libsass-maven-plugin</artifactId>
+                    <version>0.2.10-libsass_3.5.3</version>
+                    <executions>
+                        <execution>
+                            <phase>generate-resources</phase>
+                            <goals>
+                                <goal>compile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <inputPath>${basedir}/src/main/sass/</inputPath>
+                        <outputPath>${project.build.directory}/classes/static</outputPath>
+                        <outputStyle>compressed</outputStyle>
+                        <generateSourceMap>false</generateSourceMap>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -73,6 +96,10 @@
                 <configuration>
                     <addResources>true</addResources>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.warmuuh</groupId>
+                <artifactId>libsass-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

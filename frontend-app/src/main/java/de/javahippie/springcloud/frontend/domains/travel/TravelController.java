@@ -15,6 +15,6 @@ public class TravelController {
     @GetMapping("/travel")
     public String travel(Model model) {
         model.addAttribute("cars", carClient.getAllCars());
-        return "travel";
+        return "travel/travel";
     }
 }
